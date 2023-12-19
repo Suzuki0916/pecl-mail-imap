@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.0" version="2.0"
+	xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>imap</name>
+ <channel>pecl.php.net</channel>
+ <summary>An extension to operate with the IMAP protocol, as well as the NNTP,
+ POP3, and local mailbox access methods.</summary>
+ <description>An extension to operate with the IMAP protocol, as well as the
+ NNTP, POP3, and local mailbox access methods.</description>
+ <lead>
+  <name>Derick Rethans</name>
+  <user>derick</user>
+  <email>derick@php.net</email>
+  <active>yes</active>
+ </lead>
+ <date>2023-12-19</date>
+ <time>11:16:52</time>
+ <version>
+  <release>1.0.0</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license/3_01.txt">PHP 3.01</license>
+ <notes>
+- Initial PECL release
+ </notes>
+ <contents>
+  <dir name="/">
+   <file name="config.m4" role="src" />
+   <file name="config.w32" role="src" />
+   <file name="CREDITS" role="doc" />
+   <file name="LICENSE" role="doc" />
+   <file name="php_imap.h" role="src" />
+   <file name="php_imap.c" role="src" />
+   <file name="php_imap.stub.php" role="src" />
+   <file name="php_imap_arginfo.h" role="src" />
+   <dir name="tests">
+     <dir name="setup">
+       <file role="test" name="clean.inc" />
+       <file role="test" name="dovecot.conf" />
+       <file role="test" name="dovecotpass" />
+       <file role="test" name="imap_include.inc" />
+       <file role="test" name="setup.sh" />
+       <file role="test" name="skipif.inc" />
+	 </dir>
+     <file role="test" name="README.md" />
+     <file role="test" name="bug31142_1.phpt" />
+     <file role="test" name="bug31142_2.phpt" />
+     <file role="test" name="bug32589.phpt" />
+     <file role="test" name="bug35669.phpt" />
+     <file role="test" name="bug40854.phpt" />
+     <file role="test" name="bug44098.phpt" />
+     <file role="test" name="bug45705_1.phpt" />
+     <file role="test" name="bug45705_2.phpt" />
+     <file role="test" name="bug46918.phpt" />
+     <file role="test" name="bug53377.phpt" />
+     <file role="test" name="bug63126.phpt" />
+     <file role="test" name="bug64076.phpt" />
+     <file role="test" name="bug75774.phpt" />
+     <file role="test" name="bug77020.phpt" />
+     <file role="test" name="bug77153.phpt" />
+     <file role="test" name="bug80213.phpt" />
+     <file role="test" name="bug80215.phpt" />
+     <file role="test" name="bug80216.phpt" />
+     <file role="test" name="bug80220.phpt" />
+     <file role="test" name="bug80223.phpt" />
+     <file role="test" name="bug80226.phpt" />
+     <file role="test" name="bug80242.phpt" />
+     <file role="test" name="bug80438.phpt" />
+     <file role="test" name="bug80710_1.phpt" />
+     <file role="test" name="bug80710_2.phpt" />
+     <file role="test" name="bug80800.phpt" />
+     <file role="test" name="gh9309.phpt" />
+     <file role="test" name="imap_8bit_basic.phpt" />
+     <file role="test" name="imap_append_basic.phpt" />
+     <file role="test" name="imap_base64_basic.phpt" />
+     <file role="test" name="imap_binary_basic.phpt" />
+     <file role="test" name="imap_body_basic.phpt" />
+     <file role="test" name="imap_body_errors.phpt" />
+     <file role="test" name="imap_body_uid.phpt" />
+     <file role="test" name="imap_bodystruct_basic.phpt" />
+     <file role="test" name="imap_clearflag_full_basic.phpt" />
+     <file role="test" name="imap_clearflag_full_uid.phpt" />
+     <file role="test" name="imap_close_basic.phpt" />
+     <file role="test" name="imap_close_variation4.phpt" />
+     <file role="test" name="imap_constructor.phpt" />
+     <file role="test" name="imap_createmailbox_basic.phpt" />
+     <file role="test" name="imap_delete_uid.phpt" />
+     <file role="test" name="imap_errors_basic.phpt" />
+     <file role="test" name="imap_fetch_overview_basic.phpt" />
+     <file role="test" name="imap_fetch_overview_uid.phpt" />
+     <file role="test" name="imap_fetch_overview_variation5.phpt" />
+     <file role="test" name="imap_fetch_overview_variation6.phpt" />
+     <file role="test" name="imap_fetchbody_basic.phpt" />
+     <file role="test" name="imap_fetchbody_errors.phpt" />
+     <file role="test" name="imap_fetchbody_uid.phpt" />
+     <file role="test" name="imap_fetchbody_variation6.phpt" />
+     <file role="test" name="imap_fetchheader_basic.phpt" />
+     <file role="test" name="imap_fetchheader_errors.phpt" />
+     <file role="test" name="imap_fetchheader_uid.phpt" />
+     <file role="test" name="imap_fetchheader_variation5.phpt" />
+     <file role="test" name="imap_fetchmime_errors.phpt" />
+     <file role="test" name="imap_fetchmime_uid.phpt" />
+     <file role="test" name="imap_fetchstructure_basic.phpt" />
+     <file role="test" name="imap_fetchstructure_errors.phpt" />
+     <file role="test" name="imap_fetchstructure_uid.phpt" />
+     <file role="test" name="imap_final.phpt" />
+     <file role="test" name="imap_gc_error.phpt" />
+     <file role="test" name="imap_getsubscribed_basic.phpt" />
+     <file role="test" name="imap_headerinfo_basic.phpt" />
+     <file role="test" name="imap_is_open.phpt" />
+     <file role="test" name="imap_list_basic.phpt" />
+     <file role="test" name="imap_lsub_basic.phpt" />
+     <file role="test" name="imap_mail_copy_basic.phpt" />
+     <file role="test" name="imap_mail_move_basic.phpt" />
+     <file role="test" name="imap_mutf7_to_utf8.phpt" />
+     <file role="test" name="imap_open_error.phpt" />
+     <file role="test" name="imap_open_with_cl_expunge.phpt" />
+     <file role="test" name="imap_renamemailbox_basic.phpt" />
+     <file role="test" name="imap_reopen_with_cl_expunge.phpt" />
+     <file role="test" name="imap_rfc822_parse_headers_basic.phpt" />
+     <file role="test" name="imap_rfc822_write_address_basic.phpt" />
+     <file role="test" name="imap_savebody_basic.phpt" />
+     <file role="test" name="imap_savebody_errors.phpt" />
+     <file role="test" name="imap_savebody_uid.phpt" />
+     <file role="test" name="imap_search_basic.phpt" />
+     <file role="test" name="imap_setflag_full_basic.phpt" />
+     <file role="test" name="imap_setflag_full_uid.phpt" />
+     <file role="test" name="imap_sort_uid.phpt" />
+     <file role="test" name="imap_timeout_basic.phpt" />
+     <file role="test" name="imap_undelete_basic.phpt" />
+     <file role="test" name="imap_undelete_uid.phpt" />
+     <file role="test" name="imap_utf8.phpt" />
+     <file role="test" name="imap_utf8_to_mutf7_basic.phpt" />
+     <file role="test" name="nil_constant.phpt" />
+   </dir> <!-- examples -->
+  </dir> <!-- / -->
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>8.3.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0b1</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <providesextension>imap</providesextension>
+ <extsrcrelease>
+  <configureoption name="with-kerberos" prompt="Include Kerberos Support" default="yes" />
+  <configureoption name="with-imap-ssl" prompt="Include SSL Support" default="yes" />
+ </extsrcrelease>
+</package>
