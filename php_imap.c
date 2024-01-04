@@ -571,6 +571,7 @@ PHP_RSHUTDOWN_FUNCTION(imap)
 PHP_MINFO_FUNCTION(imap)
 {
 	php_info_print_table_start();
+	php_info_print_table_row(2, "IMAP extension Version", PHP_IMAP_VERSION);
 	php_info_print_table_row(2, "IMAP c-Client Version", CCLIENTVERSION);
 #ifdef HAVE_IMAP_SSL
 	php_info_print_table_row(2, "SSL Support", "enabled");
