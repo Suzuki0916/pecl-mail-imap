@@ -15,10 +15,10 @@
   <email>derick@php.net</email>
   <active>yes</active>
  </lead>
- <date>2023-12-19</date>
- <time>11:16:52</time>
+ <date>2024-01-04</date>
+ <time>10:14:31</time>
  <version>
-  <release>1.0.0</release>
+  <release>1.0.1</release>
   <api>1.0.0</api>
  </version>
  <stability>
@@ -27,7 +27,7 @@
  </stability>
  <license uri="http://www.php.net/license/3_01.txt">PHP 3.01</license>
  <notes>
-- Initial PECL release
+- Fixed package.xml file with required minumum PHP version of 8.3.
  </notes>
  <contents>
   <dir name="/">
@@ -47,7 +47,7 @@
        <file role="test" name="imap_include.inc" />
        <file role="test" name="setup.sh" />
        <file role="test" name="skipif.inc" />
-	 </dir>
+     </dir>
      <file role="test" name="README.md" />
      <file role="test" name="bug31142_1.phpt" />
      <file role="test" name="bug31142_2.phpt" />
