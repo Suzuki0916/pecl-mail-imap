@@ -806,8 +806,13 @@ PHP_FUNCTION(imap_append)
 		}
 
 		zend_string_release(regex);
+#if PHP_VERSION_ID >= 80400
+		php_pcre_match_impl(pce, internal_date, return_value, subpats, global,
+			Z_L(0), Z_L(0));
+#else
 		php_pcre_match_impl(pce, internal_date, return_value, subpats, global,
 			0, Z_L(0), Z_L(0));
+#endif
 
 		if (!Z_LVAL_P(return_value)) {
 			// TODO Promoto to error?
