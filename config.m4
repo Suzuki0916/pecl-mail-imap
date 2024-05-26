@@ -79,15 +79,8 @@ AC_DEFUN([PHP_IMAP_SSL_CHK], [
     if test "$PHP_OPENSSL" = ""; then
       PHP_OPENSSL='no'
     fi
-    PHP_SETUP_OPENSSL(IMAP_SHARED_LIBADD,
-    [
-      AC_DEFINE(HAVE_IMAP_SSL,1,[ ])
-    ], [
-      AC_MSG_ERROR([OpenSSL libraries not found.
-
-      Check whether openssl is on your PKG_CONFIG_PATH and the output in config.log)
-      ])
-    ])
+    PHP_SETUP_OPENSSL([IMAP_SHARED_LIBADD],
+      [AC_DEFINE([HAVE_IMAP_SSL], [1], [ ])])
   elif test -f "$IMAP_INC_DIR/linkage.c"; then
     AC_EGREP_HEADER(ssl_onceonlyinit, $IMAP_INC_DIR/linkage.c, [
       AC_MSG_ERROR([This c-client library is built with SSL support.
